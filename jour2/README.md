@@ -123,6 +123,10 @@ $((a+b))
 ```
 pour les calculs
 
+utilisez STDIN (cf article au début) et `while read`
+
+pour la lecture des 200 chiffres
+
 ## ex09 mean200
 faire un script `ex09/mean200.sh`
 * faire un script qui prend en argument 200 chiffres ou plus et affiche leur moyenne
