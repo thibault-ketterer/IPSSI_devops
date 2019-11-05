@@ -52,7 +52,13 @@ faire un script `ex03/cd.sh`
 qui 
 * crée un répertoire,
 * va dedans
-* affiche le contenu
+* affiche le contenu (ls -la)
+vous devez avoir
+```
+total 0
+drwxr-xr-x 1 kit kit    0 Nov  5 12:23 .
+drwxr-xr-x 1 kit kit 4700 Nov  5 12:23 ..
+```
 
 ## ex04 verification.sh
 faire un script `ex04/verification.sh`
