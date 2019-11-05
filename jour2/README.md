@@ -175,7 +175,7 @@ vous faites donc votre rendu comme ceci en remplacant <monuserwindows>
 ```
 cd ~
 dat=$(date +%Y-%m-%d)
-tar zcvf ${USER}_${dat}.tar.gz rendu
+tar zcvf ${USER}_${dat}.tar.gz rendu && echo ${USER}_${dat}.tar.gz OK
 cp ${USER}_${dat}.tar.gz /mnt/c/Users/monuserwindows/Desktop/.
 ```
 
