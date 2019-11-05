@@ -93,7 +93,7 @@ qui affiche l'historique mais uniquement les 15 dernières lignes
 le script sera testé en faisant
 
 ```
-    . ./affiche_histo.sh
+    . ./historique.sh
 ```
 
 ## ex07 add.sh
@@ -112,6 +112,14 @@ faire un script qui lit 200 chiffres  en entrée et affiche leur somme
 exmple
 $ for i in {0..200};do echo $i;done | ./sum200.sh
 20100
+
+indice utilisez 
+```
+a=1
+b=2
+$((a+b))
+```
+pour les calculs
 
 ## ex09 mean200
 faire un script `ex09/mean200.sh`
