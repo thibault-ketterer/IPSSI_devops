@@ -212,5 +212,7 @@ tar tf ketterer_2019-11-05.tar.gz
 
 ensuite envoyer le ficier vers mon ip
 
+http://192.168.22.13:5000/
+
 
 Vous pouvez vérifier votre upload 7-zip sous windows qui sait ouvrir les .tar.gz
