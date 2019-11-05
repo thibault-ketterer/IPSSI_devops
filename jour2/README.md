@@ -125,16 +125,19 @@ pour les calculs
 faire un script `ex09/mean200.sh`
 * faire un script qui prend en argument 200 chiffres ou plus et affiche leur moyenne
 exmple
-$ for i in {0..200};do echo $i;done | ./mean200.sh
+```
+for i in {0..200};do echo $i;done | ./mean200.sh
 100
+```
 
 ## ex10 mean sum 200
 faire un script `ex10/mean_sum200.sh`
 * faire un script qui prend en argument 200 chiffres ou plus et affiche leur somme et leur moyenne
 exmple
-$ for i in {0..200};do echo $i;done | ./mean_sum200.sh
+```for i in {0..200};do echo $i;done | ./mean_sum200.sh
 100
 20100
+```
 
 
 
