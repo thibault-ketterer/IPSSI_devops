@@ -73,6 +73,17 @@ indice `man test`
 faire un script `ex05/test_curl.sh`
 qui test si un site fonctionne et affiche "OK" si c'est le cas "FAIL" si ce n'est pas le cas
 
+exemple de sortie
+
+```
+$ ./ex05/test_curl.sh www.google.com
+OK
+$ echo $?
+0
+
+```
+
+
 indice, utilisez curl
 
 ## ex06 historique.sh
