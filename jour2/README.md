@@ -110,7 +110,14 @@ indice utilisez `$(())` pour les calculs
 faire un script `ex08/sum200.sh`
 faire un script qui lit 200 chiffres  en entrée et affiche leur somme
 
-Exemple
+Exemple 1
+```
+$ printf "0\n10\n" | ./sum200.sh
+5
+```
+
+
+Exemple 2
 ```
 $ for i in {0..200};do echo $i;done | ./sum200.sh
 20100
