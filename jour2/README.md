@@ -29,7 +29,8 @@ A priori vous allez utilser
 vous pouez vérifier l'arborescence en faisant `find`
 
 ## ex01 heure1.sh
-faire un script qui affiche l'heure
+faire un script `ex01/heure1.sh`
+qui affiche l'heure
 exemple
 ```
 $ ./heure1.sh
@@ -38,7 +39,8 @@ mercredi 30 octobre 2019, 15:38:21 (UTC+0100) (si systeme en fr)
 ```
 
 ## ex02 heure2.sh
-faire un script qui affiche l'heure avec le nombre de secondes depuis le 01-01-1970
+faire un script `ex02/heure2.sh`
+qui affiche l'heure avec le nombre de secondes depuis le 01-01-1970
 exemple
 ```
 $ ./heure2.sh
@@ -46,7 +48,7 @@ $ ./heure2.sh
 ```
 
 ## ex03 cd.sh
-faire un script `ex02/cd.sh`
+faire un script `ex03/cd.sh`
 qui crée un répertoire, va dedans
 affiche le contenu
 
@@ -117,19 +119,27 @@ drwxr-xr-x 1 kit kit 0 Oct 11 11:25 ex05
 ```
 vous faite donc votre rendu comme ceci en remplacant <monnom> et <date>
 ```
-tar zcvf <monnom>_<date>.tar.gz ~/rendu
+cd ~
+tar zcvf <monnom>_<date>.tar.gz rendu
 cp <monnom>_<date>.tar.gz /mnt/c/Users/monuserwindows/Desktop/.
 ```
 
 pour un mac
 ```
+cd ~
 cp <monnom>_<date>.tar.gz ~/Desktop/.
 ```
 
 exemple pour moi
 ```
-tar zcvf ketterer_2019-11-05.tar.gz ~/rendu
-cp ketterer_2019-11-05.tar.gz /mnt/c/Users//Desktop/.
+cd ~
+tar zcvf ketterer_2019-11-05.tar.gz rendu
+cp ketterer_2019-11-05.tar.gz /mnt/c/Users/Desktop/.
+```
+
+vérifier le tar avant de l'envoyer
+```
+tar tf ketterer_2019-11-05.tar.gz
 ```
 
 ensuite envoyer le ficier vers mon ip
