@@ -112,8 +112,8 @@ faire un script qui lit 200 chiffres  en entrée et affiche leur somme
 
 Exemple 1
 ```
-$ printf "0\n10\n" | ./sum200.sh
-5
+$ printf "1\n10\n" | ./sum200.sh
+11
 ```
 
 
@@ -139,7 +139,13 @@ pour la lecture des 200 chiffres
 faire un script `ex09/mean200.sh`
 * faire un script qui prend en argument 200 chiffres ou plus et affiche leur moyenne
 
-Exemple
+Exemple 1
+```
+$ printf "0\n10\n" | ./mean200.sh
+5
+```
+
+Exemple 2
 ```
 for i in {0..200};do echo $i;done | ./mean200.sh
 100
