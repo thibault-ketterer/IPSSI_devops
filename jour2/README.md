@@ -59,6 +59,8 @@ si le fichier existe il l'efface, sinon il affiche "nothing to do"
 
  indice dans votre `~/.profile` (oui ici pour les utilisateurs de mac https://gist.github.com/edwinksl/dafc0594176df6058bb395e985833189)
 
+indice `man test`
+
 ## ex05 test_curl.sh
 faire un script `ex05/test_curl.sh`
 qui test si un site fonctionne et affiche "OK" si c'est le cas "FAIL" si ce n'est pas le cas
