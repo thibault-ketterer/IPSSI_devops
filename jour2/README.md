@@ -49,8 +49,10 @@ $ ./heure2.sh
 
 ## ex03 cd.sh
 faire un script `ex03/cd.sh`
-qui crée un répertoire, va dedans
-affiche le contenu
+qui 
+* crée un répertoire,
+* va dedans
+* affiche le contenu
 
 ## ex04 verification.sh
 faire un script `ex04/verification.sh`
