@@ -104,6 +104,7 @@ exmple
 $ ./add.sh 3 2
 5
 ```
+indice utilisez `$(())` pour les calculs
 
 ## ex08 sum200
 faire un script `ex08/sum200.sh`
@@ -158,6 +159,28 @@ exemple pour moi
 ```
 cd ~
 tar zcvf ketterer_2019-11-05.tar.gz rendu
+rendu/
+rendu/ex01/
+rendu/ex01/heure1.sh
+rendu/ex02/
+rendu/ex02/heure2.sh
+rendu/ex03/
+rendu/ex03/cd.sh
+rendu/ex04/
+rendu/ex04/verification.sh
+rendu/ex05/
+rendu/ex05/test_curl.sh
+rendu/ex06/
+rendu/ex06/historique.sh
+rendu/ex07/
+rendu/ex07/add.sh
+rendu/ex08/
+rendu/ex08/sum200.sh
+rendu/ex09/
+rendu/ex09/mean200.sh
+rendu/ex10/
+rendu/ex10/mean_sum200.sh
+
 cp ketterer_2019-11-05.tar.gz /mnt/c/Users/Desktop/.
 ```
 
