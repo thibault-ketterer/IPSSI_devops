@@ -109,7 +109,8 @@ indice utilisez `$(())` pour les calculs
 ## ex08 sum200
 faire un script `ex08/sum200.sh`
 faire un script qui lit 200 chiffres  en entrée et affiche leur somme
-exemple
+
+Exemple
 ```
 $ for i in {0..200};do echo $i;done | ./sum200.sh
 20100
@@ -130,7 +131,8 @@ pour la lecture des 200 chiffres
 ## ex09 mean200
 faire un script `ex09/mean200.sh`
 * faire un script qui prend en argument 200 chiffres ou plus et affiche leur moyenne
-exmple
+
+Exemple
 ```
 for i in {0..200};do echo $i;done | ./mean200.sh
 100
@@ -142,7 +144,8 @@ utilisez STDIN (cf article au début) et `while read`
 ## ex10 mean sum 200
 faire un script `ex10/mean_sum200.sh`
 * faire un script qui prend en argument 200 chiffres ou plus et affiche leur somme et leur moyenne
-exmple
+
+Exemple
 ```
 for i in {0..200};do echo $i;done | ./mean_sum200.sh
 100
@@ -155,31 +158,37 @@ for i in {0..200};do echo $i;done | ./mean_sum200.sh
 vous devez avoir si vous avez tout fait dans votre répertoire ~/rendu
 
 ```
-~/rendu _ ls -l
+~/rendu _ ls -l 
 total 0
 drwxr-xr-x 1 kit kit 0 Oct 11 11:25 ex01
 drwxr-xr-x 1 kit kit 0 Oct 11 11:25 ex02
 drwxr-xr-x 1 kit kit 0 Oct 11 11:25 ex03
 drwxr-xr-x 1 kit kit 0 Oct 11 11:25 ex04
 drwxr-xr-x 1 kit kit 0 Oct 11 11:25 ex05
+drwxr-xr-x 1 kit kit 0 Oct 11 11:25 ex06
+drwxr-xr-x 1 kit kit 0 Oct 11 11:25 ex08
+drwxr-xr-x 1 kit kit 0 Oct 11 11:25 ex08
+drwxr-xr-x 1 kit kit 0 Oct 11 11:25 ex09
+drwxr-xr-x 1 kit kit 0 Oct 11 11:25 ex10
 ```
-vous faite donc votre rendu comme ceci en remplacant <monnom> et <date>
+vous faites donc votre rendu comme ceci en remplacant <monuserwindows>
 ```
 cd ~
-tar zcvf <monnom>_<date>.tar.gz rendu
-cp <monnom>_<date>.tar.gz /mnt/c/Users/monuserwindows/Desktop/.
+dat=$(date +%Y-%m-%d)
+tar zcvf ${USER}_${dat}.tar.gz rendu
+cp ${USER}_${dat}.tar.gz /mnt/c/Users/monuserwindows/Desktop/.
 ```
 
 pour un mac
 ```
 cd ~
-cp <monnom>_<date>.tar.gz ~/Desktop/.
+cp ${USER}_${dat}.tar.gz ~/Desktop/.
 ```
 
 exemple pour moi
 ```
 cd ~
-tar zcvf ketterer_2019-11-05.tar.gz rendu
+tar zcvf thibault_ketterer_2019-11-05.tar.gz rendu
 rendu/
 rendu/ex01/
 rendu/ex01/heure1.sh
@@ -202,12 +211,12 @@ rendu/ex09/mean200.sh
 rendu/ex10/
 rendu/ex10/mean_sum200.sh
 
-cp ketterer_2019-11-05.tar.gz /mnt/c/Users/Desktop/.
+cp thibault_ketterer_2019-11-05.tar.gz /mnt/c/Users/Desktop/.
 ```
 
 vérifier le tar avant de l'envoyer
 ```
-tar tf ketterer_2019-11-05.tar.gz
+tar tf thibault_ketterer_2019-11-05.tar.gz
 ```
 
 ensuite envoyer le ficier vers mon ip
