@@ -53,20 +53,20 @@ qui crée un répertoire, va dedans
 affiche le contenu
 
 ## ex04 verification.sh
-faire un script `ex03/verification.sh`
+faire un script `ex04/verification.sh`
 qui regarde si un fichier "efface_moi" existe
 si le fichier existe il l'efface, sinon il affiche "nothing to do"
 
  indice dans votre `~/.profile` (oui ici pour les utilisateurs de mac https://gist.github.com/edwinksl/dafc0594176df6058bb395e985833189)
 
 ## ex05 test_curl.sh
-faire un script `ex04/test_curl.sh`
+faire un script `ex05/test_curl.sh`
 qui test si un site fonctionne et affiche "OK" si c'est le cas "FAIL" si ce n'est pas le cas
 
 indice, utilisez curl
 
 ## ex06 historique.sh
-faire un script `ex05/historique.sh`
+faire un script `ex06/historique.sh`
 qui affiche l'historique mais uniquement les 15 dernières lignes
 
 le script sera testé en faisant
@@ -76,6 +76,7 @@ le script sera testé en faisant
 ```
 
 ## ex07 add.sh
+faire un script `ex07/add.sh`
 faire un script qui prend en argument deux chiffres et affiche leur somme
 exmple
 ```
@@ -85,18 +86,21 @@ $ ./add.sh 3 2
 
 
 ## ex08 
+faire un script `ex08/sum200.sh`
 faire un script qui lit 200 chiffres  en entrée et affiche leur somme
 exmple
 $ for i in {0..200};do echo $i;done | ./sum200.sh
 20100
 
 ## ex09 
+faire un script `ex09/mean200.sh`
 * faire un script qui prend en argument 200 chiffres ou plus et affiche leur moyenne
 exmple
 $ for i in {0..200};do echo $i;done | ./mean200.sh
 100
 
 ## ex10
+faire un script `ex10/mean_sum200.sh`
 * faire un script qui prend en argument 200 chiffres ou plus et affiche leur somme et leur moyenne
 exmple
 $ for i in {0..200};do echo $i;done | ./mean_sum200.sh
