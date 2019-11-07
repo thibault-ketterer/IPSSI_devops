@@ -24,6 +24,11 @@ cat /etc/passwd | while read line;do
 	echo $line | cut -d: -f1
 done
 
+# tester un fichier
+if [ -f fichier ];then
+	echo "file \"fichier\" exists " 
+fi
+
 # couper sur un charactere : afficher la colonne 2
 cut -d: -f2
 # avec awk
@@ -83,4 +88,20 @@ free
 # espace disque
 df -h
 df -k
+
+# redirection
+# sortie STDOUT dans /tmp/ls.log
+# sortie STDERR dans /tmp/ls_err.log
+ls / 2> /tmp/ls_err2.log |tee /tmp/ls.log
+
+# tout dans le meme fichier
+ls / /tmp/ls_err2.log > /tmp/ls.log 2>&1
+
+# la variable pour vérifier la sortie d'un programme
+echo $?
+
+# la variable qui indique les endroits ou le shell va chercher nos programmes a executer
+echo $PATH
+# la changer
+export PATH="$PATH:~/mybin"
 
