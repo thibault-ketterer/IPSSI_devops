@@ -1,0 +1,43 @@
+docker devops ipssi
+vous allez copier votre répertoire de Linux -> windows
+
+pour ca 
+
+ls -l /mnt/c
+
+cd ..
+cp -a python3.7-alpine3.8 /mnt/c/Users/<votrenom>/
+
+
+ensuite vous allez dans le shell de docker
+cd
+cd python3.7-alpine3.8
+docker build .
+
+# lister les images
+docker images
+
+# supprimer une image
+docker rmi <id>
+
+# build avec un TAG / un nom
+docker build -t ipssi/pflask:1 .
+
+docker run -p8000:80 ipssi/pflask:1
+
+# on modifie main.py
+docker build -t ipssi/pflask:1 .
+
+aller sur windows http://192.168.99.100/toto
+
+* rajouter une route dans le main.py
+/addition
+
+la route devra ajouter les arguments
+
+/addition?a=1&b=2
+chrome va afficher "3"
+
+google  "stack overwflow flask route GET"
+
+
