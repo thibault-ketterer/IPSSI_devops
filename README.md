@@ -268,4 +268,20 @@ construisez un docker-compose.yml avec un wordpress et la version 5.6 de mysql
 
 Le wordpress doit fonctionner sur le port 7777
 
+Si problème d'internet faites juste le fichier intelligement sans tester, et la vérification ne testera pas votre docker-compose
+
 # ex13
+md5 vous allez découvrir ce qu'est un md5
+
+il s'agit d'une somme de hashage, les plus connues sont sha1 sha256, sha512 et md5. cf https://en.wikipedia.org/wiki/MD5
+
+faite un script `exam2/ex13/calcmd5.sh` qui afiche le md5 d'un paramètre donné en argument
+exemple
+```
+$ ./calcmd5.sh toto
+11a3e229084349bc25d97e29393ced1d
+```
+
+* man md5sum
+* attention a n'afficher que le md5
+
