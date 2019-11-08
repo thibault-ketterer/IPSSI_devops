@@ -276,7 +276,7 @@ read_json.py
 Ici vous faites du Docker, donc sous windows vous devrez tester dans votre shell docker, mais bien penser a mettre vos exercices sous git dans le Linux
 
 creer un fichier `exam02/ex11/Dockerfile` qui contiendra ce Dockerfile auquel vous aurez ajouté une création de répertoire "/ipssi"
-* Dockerfile `https://github.com/alpinelinux/docker-alpine/blob/master/Dockerfile`
+* [Dockerfile] 
 * aller dans la doc de docker ou sur google pour trouver comment on crée un répertoire dans un Dockerfile 
 	* vous pouvez vérifier en faisant un build
 	`docker build -t ipssi/ex11:1 .`
@@ -285,13 +285,12 @@ creer un fichier `exam02/ex11/Dockerfile` qui contiendra ce Dockerfile auquel vo
 	* verifier que le répertoire est présent avec ls
 
 
-
 # ex12
 creer `exam2/ex12/docker-compose.yml`
 
 en vous basant sur un docker-compose.yml de votre choix
 
-construisez un docker-compose.yml avec un wordpress et la version 5.6 de mysql
+construisez un docker-compose.yml avec un wordpress version `5-php7.1-fpm-alpine` et la version 5.7 de mysql
 
 Le wordpress doit fonctionner sur le port 7777
 
@@ -302,13 +301,43 @@ md5 vous allez découvrir ce qu'est un md5
 
 il s'agit d'une somme de hashage, les plus connues sont sha1 sha256, sha512 et md5. cf https://en.wikipedia.org/wiki/MD5
 
+On peut faire une somme de hashage d'un texte, d'un password, ou même d'un fichier, ce qui est souvent le cas sur internet comme ici par exemple
+
+Cela sert a valider qu'un fichier est le même.
+
+La règle, 2 fichiers ou 2 textes identiques ont la même somme de hashage md5.
+
 faite un script `exam2/ex13/calcmd5.sh` qui afiche le md5 d'un paramètre donné en argument
 exemple
 ```
 $ ./calcmd5.sh toto
 11a3e229084349bc25d97e29393ced1d
 ```
-
 * man md5sum
-* attention a n'afficher que le md5
+* attention a n'afficher que le md5 et pas de tiret
 
+# ex14
+Docker suite, DANS UN SHELL DOCKER
+
+reprenez votre Dockerfile de l'exercice 11 et faire un script `exam2/ex14/lance_docker.sh`
+
+ajouter un volume dans le Dockerfile de facon à ce que le répertoire `/out` à l'intérieur du docker pointe sur le répertoire extérieur suivant `/tmp` dans votre machine
+
+* voir cet article https://rominirani.com/docker-tutorial-series-part-7-data-volumes-93073a1b5b72
+* ou chercher sur internet `docker mount volume` sur google
+* il y a juste une option a rajouter au `docker run` pour que cela fonctionne
+
+exemple DANS UN SHELL DOCKER
+
+```
+mkdir out
+$ ./lance_docker.sh
+/ # echo toto > out/sort_de_docker.txt
+/ # exit
+$ cat /tmp/sort_de_docker.txt
+toto
+```
+
+# ex15
+avec ce que vous avez appris sur le hashage
+faire un module python qui valide que vous avez entré le bon password ""
