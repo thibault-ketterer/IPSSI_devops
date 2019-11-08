@@ -23,10 +23,17 @@ docker rmi <id>
 # build avec un TAG / un nom
 docker build -t ipssi/pflask:1 .
 
+# lancer avec la translation de port 8000 extérieur vers 80 intérieur
 docker run -p8000:80 ipssi/pflask:1
 
 # on modifie main.py
 docker build -t ipssi/pflask:1 .
+
+# lister les docker qui tournent
+docker ps
+
+# lister les docker qui ont tournés
+docker ps -a
 
 aller sur windows http://192.168.99.100/toto
 
