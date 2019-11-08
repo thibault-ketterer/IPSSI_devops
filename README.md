@@ -128,6 +128,17 @@ $ python3 test.py
 ```
 pour vérifier
 
+Pour vous aider, vous pouvez utiliser ce script test_calcul.py que vous mettrez dans `exam2/ex03`
+```
+#kit@bladrom ~/exam2/ex03 _$ python test_calcul.py
+4.0
+sorry cannot divide by zero
+0
+0
+40
+```
+
+
 # ex04
 Faites un module python dans `exam2/ex04/logs.py` qui contient 1 fonction `logthis`
 
