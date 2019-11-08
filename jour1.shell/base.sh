@@ -95,7 +95,7 @@ df -k
 ls / 2> /tmp/ls_err2.log |tee /tmp/ls.log
 
 # tout dans le meme fichier
-ls / /tmp/ls_err2.log > /tmp/ls.log 2>&1
+ls / > /tmp/ls.log 2>&1
 
 # la variable pour vérifier la sortie d'un programme
 echo $?

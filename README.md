@@ -40,7 +40,7 @@ on doit voir le fichier Dockerfile
 * un script ne doit pas faire de `read` en posant des questions sauf si indiqué dans le sujet (ou les exemples)
 
 # ex01
-creer un script `exam2/ex01/ls.sh`
+Creer un script `exam2/ex01/ls.sh`
 
 qui execute un ls avec l'argument passé en ligne de commande
 * le script doit afficher la sortie standard vers un fichier /tmp/ls.log
@@ -60,12 +60,13 @@ $ ls.sh /etc/passwdsdfds
 ls FAIL
 
 $ cat /tmp/ls.log
+-rw-r--r-- 1 root root 2728 Nov  5 09:45 /etc/passwd
 $ cat /tmp/ls_err.log
 ls: cannot access '/etc/passwdsdfds': No such file or directory
 ```
 
 # ex02
-faites un script `exam2/ex02/ids.sh` pour extraire la colone des `ids` dans /etc/passwd
+Faites un script `exam2/ex02/ids.sh` pour extraire la colone des `ids` dans /etc/passwd
 
 utilisez
 * cut
@@ -81,8 +82,7 @@ exemple (le resultat dépend aussi du contenu de /etc/passwd)
 ```
 
 # ex03
-
-faites un module python dans `exam2/ex03/calcul.py` qui contient 2 fonctions
+Faites un module python dans `exam2/ex03/calcul.py` qui contient 2 fonctions
 
 * une fonction division qui divise les 2 arguments de la fonction
 * une fonction multiplication qui multiplie les 2 arguments de la fonction
@@ -102,13 +102,14 @@ sorry cannot divide by zero
 ```
 
 # ex04
-faites un module python dans `exam2/ex04/logs.py` qui contient 1 fonction `logthis`
+Faites un module python dans `exam2/ex04/logs.py` qui contient 1 fonction `logthis`
+
 la fonction `logthis` devra écrire un fichier python.log contenant le message donné en argument précédée de la date
 * le log doit être cumulatif
 * utilisez open
-* utilisez write pour écrire
-* utilisez datetime
-* utilisez strftime pour formater la date comme voulu dans l'exemple
+* utilisez `write` pour écrire
+* utilisez `datetime`
+* utilisez `strftime` pour formater la date comme voulu dans l'exemple
 * utilisez google pour le reste
 
 exemple
@@ -125,15 +126,16 @@ cat python.log
 ```
 
 # ex05
-faite un script python `exam02/ex05/read_comp.py` qui lit un fichier docker-compose.yml dans le répertoire courant
-et affiche la liste des images dockers utilisés par ce docker compose chacune sur une ligne, sans espaces ni saut de ligne superflus (on accepte que la ligne contienne des "/" et la version du tag docker)
+Faites un script python `exam02/ex05/read_comp.py` qui lit un fichier docker-compose.yml dans le répertoire courant
+
+et affiche la liste des images dockers utilisées par ce docker-compose chacune sur une ligne, sans espaces ni saut de ligne superflus (on accepte que la ligne contienne des "/" et la version du tag docker)
 * utiliser open
 * indice regarder la doc de la fonction string `strip()`
 * regarder les scripts de parsing de logs apache
 * faite par étapes
 
 # ex06
-faites un script python `exam2/ex06/count_lines.py` qui compte le nombre de ligne dans un fichier donné en argument
+Faites un script python `exam2/ex06/count_lines.py` qui compte le nombre de ligne dans un fichier donné en argument
 
 exemple
 ```
@@ -143,7 +145,7 @@ $ ./count_lines.py file.txt
 ```
 
 # ex07
-faites un script `exam2/ex07/test_internet.sh`
+Faites un script `exam2/ex07/test_internet.sh`
 
 qui teste si www.google.com fonctionne
 
@@ -163,7 +165,7 @@ $ cat internet.log
 ```
 
 # ex08
-faites un script `exam2/ex08/commit.sh`
+Faites un script `exam2/ex08/commit.sh`
 
 qui enchaine les commandes git suivantes
 * affichage du statut
@@ -211,11 +213,11 @@ To /tmp/somegit
 ```
 
 # ex09
-creer un fichier README.md à la racine de `exam2` qui contiendra la description de ce que l'on trouve dans le répertoire exam2.
+Creer un fichier README.md à la racine de `exam2` qui contiendra la description de ce que l'on trouve dans le répertoire exam2.
 
 il doit contenir un titre et une liste et du code
 exemple:
-# description
+## description
 voici mes fichiers d'examen du 2019-11-08
 * ex01 du script shell
 * ex02 idem
@@ -224,6 +226,8 @@ exemple de code
 ```
 ls -l
 ```
+
+Le dossier `exam2/ex09` sera donc vide ou inexistant.
 
 # ex10
 lire un fichier json
