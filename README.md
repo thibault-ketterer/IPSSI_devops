@@ -164,7 +164,7 @@ cat python.log
 ```
 
 # ex05
-Faites un script python `exam02/ex05/read_comp.py` qui lit un fichier docker-compose.yml dans le répertoire courant
+Faites un script python `exam2/ex05/read_comp.py` qui lit un fichier docker-compose.yml dans le répertoire courant
 
 et affiche la liste des images dockers utilisées par ce docker-compose chacune sur une ligne, sans espaces ni saut de ligne superflus (on accepte que la ligne contienne des "/" et la version du tag docker)
 * utiliser open
@@ -271,7 +271,7 @@ Le dossier `exam2/ex09` sera donc vide ou inexistant.
 # ex10
 lire un fichier json
 
-faire un script `exam02/ex10/read_json.py`
+faire un script `exam2/ex10/read_json.py`
 qui lit ce fichier json
 [students.json]
 et l'affiche comme suit
@@ -287,7 +287,7 @@ read_json.py
 # ex11
 Ici vous faites du Docker, donc sous windows vous devrez tester dans votre shell docker, mais bien penser a mettre vos exercices sous git dans le Linux
 
-creer un fichier `exam02/ex11/Dockerfile` qui contiendra ce Dockerfile auquel vous aurez ajouté une création de répertoire "/ipssi"
+creer un fichier `exam2/ex11/Dockerfile` qui contiendra ce Dockerfile auquel vous aurez ajouté une création de répertoire "/ipssi"
 * [Dockerfile] 
 * aller dans la doc de docker ou sur google pour trouver comment on crée un répertoire dans un Dockerfile 
 	* vous pouvez vérifier en faisant un build
