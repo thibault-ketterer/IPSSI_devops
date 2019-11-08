@@ -1,0 +1,19 @@
+{
+	"students" : ["Amoyal_simon",
+		"Bombardieri_billy",
+		"Bouchakour_younes",
+		"elie_TOURE",
+		"Guillaume_Andronic",
+		"Jollet_Alexander",
+		"kelig_kelig",
+		"Lacheheb_thomas",
+		"Lau_Vincent",
+		"lenny_louis2",
+		"LE_VAN_julien",
+		"LOULI_aniss",
+		"mehdi_mebarki",
+		"Sardarian_djemal",
+		"steve_steve",
+		"vincent_leclerc"
+	]
+}
