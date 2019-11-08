@@ -290,20 +290,21 @@ creer `exam2/ex12/docker-compose.yml`
 
 en vous basant sur un docker-compose.yml de votre choix
 
-construisez un docker-compose.yml avec un wordpress version `5-php7.1-fpm-alpine` et la version 5.7 de mysql
+construisez un docker-compose.yml avec un wordpress version `5-php7.1-alpine` et la version 5.7 de mysql
 
 Le wordpress doit fonctionner sur le port 7777
 
 Si problème d'internet faites juste le fichier intelligement sans tester, et la vérification ne testera pas votre docker-compose
 
 # ex13
-md5 vous allez découvrir ce qu'est un md5
+## md5
+vous allez découvrir ce qu'est un md5.
 
 il s'agit d'une somme de hashage, les plus connues sont sha1 sha256, sha512 et md5. cf https://en.wikipedia.org/wiki/MD5
 
-On peut faire une somme de hashage d'un texte, d'un password, ou même d'un fichier, ce qui est souvent le cas sur internet comme ici par exemple
+On peut faire une somme de hashage d'un texte, d'un password, ou même d'un fichier, ce qui est souvent le cas sur internet comme ici par exemple sur un site de téléchargment d'iso de Linux.
 
-Cela sert a valider qu'un fichier est le même.
+Cela sert à valider qu'un fichier est le même.
 
 La règle, 2 fichiers ou 2 textes identiques ont la même somme de hashage md5.
 
@@ -340,4 +341,24 @@ toto
 
 # ex15
 avec ce que vous avez appris sur le hashage
-faire un module python qui valide que vous avez entré le bon password ""
+
+faire un module python `login` qui  comporte une fonction `compare_pass`, qui valide que vous avez entré le bon password "ipssi"
+
+Si le password donné en argument à la fonction est bien ipssi, la fonction retourne `True`, sinon elle retourne `False`
+
+Vous pouvez utiliser le fichier `test_login.py` pour tester votre module comme suit
+
+* chercher `calcul md5 python3` sur google (module hashlib)
+
+```
+kit@bladrom ~/exam2/ex15 _$ python test_login.py ipssitata
+md5 "ipssi":  82771f9740d5e024ab823c12a9b51289
+md5   pass :  b0c328aca0e86272bd9d1fe7e92be7e3
+login failed
+#kit@bladrom ~/exam2/ex15 _$ python test_login.py ipssi
+md5 "ipssi":  82771f9740d5e024ab823c12a9b51289
+md5   pass :  82771f9740d5e024ab823c12a9b51289
+login ok
+```
+
+Si vous avez tout fini, Bravo.
