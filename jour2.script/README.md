@@ -6,6 +6,9 @@ https://www.google.com/search?q=commandes+de+bases+linux&oq=commandes+de+&aqs=ch
 * STDOUT / STDERR
 https://www.howtogeek.com/435903/what-are-stdin-stdout-and-stderr-on-linux/
 
+* git 
+https://openclassrooms.com/fr/courses/1233741-gerez-vos-codes-source-avec-git
+
 
 # sujet
 ## procedure de rendu
