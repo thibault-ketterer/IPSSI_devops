@@ -43,8 +43,8 @@ on doit voir le fichier Dockerfile
 creer un script `exam2/ex01/ls.sh`
 
 qui execute un ls avec l'argument passé en ligne de commande
-* le script doit lsiger la sortie standard vers un fichier /tmp/ls.log
-* le script doit lsiger la sortie d'erreur vers un fichier /tmp/ls_err.log
+* le script doit afficher la sortie standard vers un fichier /tmp/ls.log
+* le script doit afficher la sortie d'erreur vers un fichier /tmp/ls_err.log
 * le script doit afficher si le ls a fonctionné (c'est-a-dire l'exit code)
 * la redirection doit être cumulative, c'est-a-dire que le fichier /tmp/ls.log n'est pas supprimé à chaque lancement
 
