@@ -189,6 +189,7 @@ qui teste si www.google.com fonctionne
 
 si c'est le cas le script écrit dans un log `internet.log` la date comme dans l'exemple
 * NB pour pouvoir l'écrire sur une ligne vous devez utilser `$(commande)` et une affectation de variable
+* par exemple `temp=$(uptime)`
 
 exemple (où on active le wifi entre la 2e et le 3e lancement.
 ```
