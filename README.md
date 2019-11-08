@@ -101,6 +101,33 @@ sorry cannot divide by zero
 
 ```
 
+ATTENTION si vous modifiez votre code vous devez réimporter le module à chaque fois
+```
+~/exam2/ex03 $ python3
+>>> from calcul import division
+>>> division(8, 2)
+8
+>>> from calcul import division
+>>> division(8, 2)
+4.0
+```
+
+le plus simple est de faire un scipt de test comme suit
+
+test.py
+```
+#!/usr/bin/python
+from calcul import division
+print(division(8, 2))
+```
+
+et le lancer
+```
+$ python3 test.py
+4.0
+```
+pour vérifier
+
 # ex04
 Faites un module python dans `exam2/ex04/logs.py` qui contient 1 fonction `logthis`
 
